@@ -2,11 +2,11 @@
 # Policy Deviation Integral Guided Meta-Reinforcement Learning: Applications to High-speed Train Trajectory Optimization
 
 ## Overview
-This repository is the official implementation of Policy Deviation Integral Guided Meta-Reinforcement Learning: Applications to High-speed Train Trajectory Optimization, currently under review at IEEE Transactions on Intelligent Transportation Systems (T-ITS), 2026. This repository contains two key components:
+This repository is the official implementation of Policy Deviation Integral Guided Meta-Reinforcement Learning: Applications to High-speed Train Trajectory Optimization, currently under review at IEEE Transactions on Intelligent Transportation Systems (T-ITS), 2026. 
+![image](https://github.com/Tongzh-SEU/PDIMRL-LSGO/blob/main/Images/Framework.png)
+This repository contains two key components:
 1. **LSGO Environment**: A custom Gym environment designed to address the high-speed rail （HSR）Train Trajectory Optimization (TTO) problem using a novel reconceptualization approach.
 2. **PDIMRL Algorithm**: A novel first-order gradient-based meta-reinforcement learning (meta-RL) algorithm for HSR operation tasks, combining Proximal Policy Optimization (PPO) with Policy Deviation Integre (PDI) and Reptile meta-learning.
-
-![image](https://github.com/Tongzh-SEU/PDIMRL-LSGO/blob/main/Images/Framework.png)
 
 ## Requirements
 
@@ -26,7 +26,7 @@ You can install the required packages using the following command:
 ```bash
 pip install numpy==1.24.2 torch==2.0.0 gym==0.26.2 matplotlib==3.7.1 pandas==1.5.3 scipy==1.10.1 pygame==2.3.0
 ```
-# Files
+## Files
 - train.py: Runs PDIMRL training in LSGO environment
 - PDIMRL.py: PDIMRL algorithm implementation
 - LSGO_env: LSGO-centirc MDP implementation
