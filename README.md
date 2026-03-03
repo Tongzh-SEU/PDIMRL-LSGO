@@ -67,12 +67,14 @@ pip install numpy==1.24.2 torch==2.0.0 gym==0.26.2 matplotlib==3.7.1 pandas==1.5
 
 - **Environment render settings**<br>
   Edit code in ‘/TrainContinuous.py’
-    - `self.is_render = True`: enable visualization.
-    - `self.render_gap = self.line_len`: render refresh gap (in meters).
-    - `self.gap_num = 100`: Rendering precision.  
+    - `self.is_render(bool)`: enable visualization.
+    - `self.render_gap(int)`: render refresh gap (in meters).
+    - `self.gap_num (int)`: Rendering precision.  
 
 - **Configure PDIMRL and meta-tasks**<br>
-  Configure PDIMRL hyperparameters and meta-task definitions in train.py.
+  Configure PDIMRL hyperparameters and meta-task definitions in train.py.<br>
+  meta-task definitions eg. tasks[0] is station 0, plan_time index 0, and plan time legend is 800, etc.<br>
+  `tasks = [{'goal': [0, 0, 800]}, {'goal': [0, 1, 900]}]`
 
 - **Runs PDIMRL training in LSGO environment**<br>
   ```bash
