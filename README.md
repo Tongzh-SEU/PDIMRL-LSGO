@@ -61,7 +61,7 @@ pip install numpy==1.24.2 torch==2.0.0 gym==0.26.2 matplotlib==3.7.1 pandas==1.5
   - `train` (train dynamics)
 
 - **Generate environment cache data**<br>
-  This generates cached data for the current parameter configuration.  
+  This generates cached data for the current parameter configuration in a new env parameters, and executed only on the first run after parameter changes.
   ```bash
   python LSGO_env/get_data.py
 
