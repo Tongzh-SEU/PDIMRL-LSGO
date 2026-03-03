@@ -3,6 +3,8 @@
 
 ## Overview
 
+![image](https://github.com/Tongzh-SEU/PDIMRL-LSGO/blob/main/Images/Framework.pdf)
+
 This repository contains two key components:
 
 1. **LSGO Environment**: A custom Gym environment designed to address the high-speed rail （HSR）Train Trajectory Optimization (TTO) problem using a novel reconceptualization approach.
