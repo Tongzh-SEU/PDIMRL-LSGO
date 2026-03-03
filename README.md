@@ -2,7 +2,7 @@
 # Policy Deviation Integral Guided Meta-Reinforcement Learning: Applications to High-speed Train Trajectory Optimization
 
 ## Overview
-This repository is the official implementation of Policy Deviation Integral Guided Meta-Reinforcement Learning: Applications to High-speed Train Trajectory Optimization. This repository contains two key components:
+This repository is the official implementation of Policy Deviation Integral Guided Meta-Reinforcement Learning: Applications to High-speed Train Trajectory Optimization, currently under review at IEEE Transactions on Intelligent Transportation Systems (T-ITS), 2025. This repository contains two key components:
 1. **LSGO Environment**: A custom Gym environment designed to address the high-speed rail （HSR）Train Trajectory Optimization (TTO) problem using a novel reconceptualization approach.
 2. **PDIMRL Algorithm**: A novel first-order gradient-based meta-reinforcement learning (meta-RL) algorithm for HSR operation tasks, combining Proximal Policy Optimization (PPO) with Policy Deviation Integre (PDI) and Reptile meta-learning.
 
