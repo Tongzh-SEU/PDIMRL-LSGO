@@ -39,8 +39,25 @@ pip install numpy==1.24.2 torch==2.0.0 gym==0.26.2 matplotlib==3.7.1 pandas==1.5
 - **Customize LSGO-centric MDP parameters**<br>
   Edit files in `LSGO_env/data/parameter/`:
   - `slope` (track gradient)
+    e.g. [0,1520) slope is 0; [1520,5000) slope is 2, etc.
+    | station | seg_slope | slope |
+    |---|---|---|
+    | 0 | 0 | 0 |
+    | 0 | 1520 | 2 |
+    | 0 | 5000 | 0 |
   - `speed_limit` (speed constraints)
+    e.g. [0,1000) v lim is 80; [1000,10000) v lim is 300, etc.
+    | station | seg_v_lim | v_lim |
+    |---|---|---|
+    | 0 | 0 | 80 |
+    | 0 | 1000 | 300 |
+    | 0 | 10000 | 0 |
   - `time` (task settings)
+    e.g. task 1 is 800, task 2 is 900, etc.
+    | station | plan_time|
+    |---|---|
+    | 0 | 800 |
+    | 0 | 900 |
   - `train` (train dynamics)
 
 - **Generate environment cache data**<br>
