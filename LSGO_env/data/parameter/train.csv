@@ -1,0 +1,2 @@
+﻿is_up,type,len,mass,power,re_conv_loss_a,re_conv_loss_b,re_tranc,re_energy_a_70,re_energy_b1_294,re_energy_b2_294,re_energy_c1_350,re_energy_c2_350,mass_factor,traction_140,braking_140,braking_b1_240,braking_b2_240,braking_c1_350,braking_c2_350,drag_coefficient_a,drag_coefficient_b,drag_coefficient_c
+1,1,203,490,8760,-0.0532,0.6351,0.65,18.258,-0.016167,19.38969,0.66504,34.1887476,0.03,0.5,-1,0.003,-1.21988,0.00174,-0.91697,1.954,0.00622,0.0004954134
