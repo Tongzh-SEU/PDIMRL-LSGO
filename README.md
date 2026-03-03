@@ -3,7 +3,7 @@
 
 ## Overview
 
-![image](https://github.com/Tongzh-SEU/PDIMRL-LSGO/blob/main/Images/Framework.pdf)
+![image](https://github.com/Tongzh-SEU/PDIMRL-LSGO/blob/main/Images/Framework.png)
 
 This repository contains two key components:
 
