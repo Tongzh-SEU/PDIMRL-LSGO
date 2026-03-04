@@ -954,14 +954,18 @@ class trainEnv(gym.Env):
             self.l_speed_loc.set_offsets(np.c_[self.loc_p, self.speed[self.loc_p] * 3.6])
 
             # ax_gear_action
-            self.l_pot_acc.set_ydata((np.concatenate([self.acc_pot[::self.gap_num], np.array([0])])))
+            self.l_pot_acc.set_ydata(
+                np.clip(np.concatenate([self.acc_pot[::self.gap_num], np.array([0])]), -1.0, 1.0)
+            )
             self.l_pot_acc.set_xdata(
                 np.concatenate([np.arange(0, self.line_len, self.gap_num), np.array([self.line_len])]))
-            self.l_speed_acc.set_ydata((np.concatenate([self.acc[::self.gap_num], np.array([0])])))
+            self.l_speed_acc.set_ydata(
+                np.clip(np.concatenate([self.acc[::self.gap_num], np.array([0])]), -1.0, 1.0)
+            )
             self.l_speed_acc.set_xdata(
                 np.concatenate([np.arange(0, self.line_len, self.gap_num), np.array([self.line_len])]))
-            self.l_pot_acc_loc.set_offsets(np.c_[self.loc_p, self.acc_pot[self.loc_p]])
-            self.l_speed_acc_loc.set_offsets(np.c_[self.loc_p, self.acc[self.loc_p]])
+            self.l_pot_acc_loc.set_offsets(np.c_[self.loc_p, np.clip(self.acc_pot[self.loc_p], -1.0, 1.0)])
+            self.l_speed_acc_loc.set_offsets(np.c_[self.loc_p, np.clip(self.acc[self.loc_p], -1.0, 1.0)])
 
             # ax_energy
             self.l_pot_e.set_ydata(np.concatenate([self.energy_pot[::self.gap_num], np.array([self.energy_pot[-1]])]))
