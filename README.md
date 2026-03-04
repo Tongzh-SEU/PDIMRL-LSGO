@@ -71,7 +71,8 @@ pip install numpy==1.24.2 torch==2.0.0 gym==0.26.2 matplotlib==3.7.1 pandas==1.5
   Edit code in ‘/TrainContinuous.py’
     - `self.is_render(bool)`: enable visualization.
     - `self.render_gap(int)`: render refresh gap (in meters).
-    - `self.gap_num (int)`: Rendering precision.  
+    - `self.gap_num (int)`: Rendering precision.<br>
+  <img src="https://github.com/Tongzh-SEU/PDIMRL-LSGO/blob/main/Images/render.png" width="600">
 
 - **Configure PDIMRL and meta-tasks**<br>
   Configure PDIMRL hyperparameters and meta-task definitions in train.py.<br>
