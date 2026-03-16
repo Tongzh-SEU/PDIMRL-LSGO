@@ -2,7 +2,8 @@
 # Policy Deviation Integral Guided Meta-Reinforcement Learning: Applications to High-speed Train Trajectory Optimization
 
 ## Overview
-This repository is the official implementation of Policy Deviation Integral Guided Meta-Reinforcement Learning: Applications to High-speed Train Trajectory Optimization, currently under review at IEEE Transactions on Intelligent Transportation Systems (T-ITS), 2026. 
+This repository is the official implementation of **Policy Deviation Integral Guided Meta-Reinforcement Learning: Applications to High-speed Train Trajectory Optimization**, accepted in **IEEE Transactions on Intelligent Transportation Systems (T-ITS)**, 2026. 
+
 
 ![image](https://github.com/Tongzh-SEU/PDIMRL-LSGO/blob/main/Images/Framework.png)
 
@@ -82,3 +83,14 @@ pip install numpy==1.24.2 torch==2.0.0 gym==0.26.2 matplotlib==3.7.1 pandas==1.5
 - **Runs PDIMRL training in LSGO environment**<br>
   ```bash
   python train.py
+
+## Citation
+If you find this code useful in your research, please consider citing our paper:
+```bash
+@article{zhang2026policy,
+title={Policy Deviation Integral Guided Meta-Reinforcement Learning: Applications to High-speed Train Trajectory Optimization},
+author={Zhang, Haotong and Wang, Wanyuan},
+journal={IEEE Transactions on Intelligent Transportation Systems},
+year={2026},
+publisher={IEEE}
+}
